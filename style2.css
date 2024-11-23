@@ -1,0 +1,340 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#Panel {
+    position: absolute;
+    width: 1920px;
+    height: 117px;
+    gap: 0px;
+    opacity: 0px;
+    background: linear-gradient(0deg, #2A3E7D, #2A3E7D);
+    box-shadow: 0px 4px 4px 0px #00000040;
+     
+}
+#Logo {
+    position: relative;
+    border: 2px solid #293346; /* Обводка текста */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень */
+    display: inline-block;
+    width: 217px;
+height: 87px;
+top: 10px;
+left: 6px;
+background: #D9D9D9;
+}
+#Gora {
+    top: 0px;
+    position: absolute;
+    z-index: 3;
+    width: 111px; /* Ширина контейнера */
+    height: 97px; /* Высота контейнера */
+    left: 107px;
+    opacity: 1; /* Убедитесь, что элемент видим */
+}
+
+#Gora img {
+    width: 100%; /* Устанавливает ширину изображения равной 100% от родительского контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+    object-fit: cover; /* Обрезает изображение, чтобы заполнить контейнер, если это необходимо */
+}
+#Ural{
+    position: absolute;
+    width: 213px;
+height: 44px;
+top: 35px;
+left: 273px;
+gap: 0px;
+opacity: 0px;
+font-family: 'Montserrat', 'Arial', sans-serif;
+font-size: 32px;
+font-weight: 350;
+line-height: 38.4px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: white;
+}
+#Man{
+    position: absolute;
+    width: 54px;
+height: 54px;
+top: 30px;
+left: 1445px;
+gap: 0px;
+opacity: 0px;
+}
+#Man img {
+    width: 100%; /* Устанавливает ширину изображения равной 100% от родительского контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+    object-fit: cover; /* Обрезает изображение, чтобы заполнить контейнер, если это необходимо */
+}
+#NameP {
+    z-index: 3;
+    position: absolute;
+    border: 2px solid #293346; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    display: inline-block;
+    width: 175px;
+    height: 54px;
+    top: 30px; 
+    left: 1516px; 
+    gap: 0px; 
+    opacity: 1; 
+    background: #D9D9D9;
+    cursor: pointer; 
+    text-align: center; 
+    line-height: 54px; 
+    font-family: 'Montserrat', 'Arial', sans-serif; 
+    font-size: 32px; 
+    font-weight: 350; 
+    text-decoration: none; 
+    text-underline-position: from-font; 
+    text-decoration-skip-ink: none; 
+}
+
+/* Стиль для текста внутри контейнера */
+#NameP span {
+    display: block;
+}
+
+/* Скрытый список, который будет выезжать */
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100px; /* Расположение списка ниже контейнера */
+    left: 1516px; /* Совпадает с контейнером */
+    width: 175px;
+    background-color: #D9D9D9;
+    box-shadow: 4px 5px 10px 2px #00000040;
+    border-radius: 10px;
+    border: 1px solid #00000066;
+    padding: 10px 0;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Кнопки в списке */
+.dropdown-button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Псевдокласс для кнопок при наведении */
+.dropdown-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Показать список при активном состоянии */
+#dropdown-menu.show {
+    display: block;
+    opacity: 1;
+}
+#Name{
+    z-index: 5;
+    width: 142px;
+height: 58px;
+top: 40px;
+left: 1534px;
+gap: 0px;
+opacity: 0px;
+font-family: 'Montserrat', 'Arial', sans-serif;
+color: #030303;
+font-size: 32px;
+font-weight: 350;
+line-height: 38.4px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+position: absolute;
+}
+#Catalog{
+    position: absolute;
+    box-shadow: 0px 0px 20px black;
+    width: 1920px;
+height: 96px;
+top: 117px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background: #D9D9D9;
+}
+#We{
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 227px;
+height: 69px;
+top: 130px;
+left: 49px;
+gap: 0px;
+border-radius: 11px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background: #333232;
+border: 1px solid #00000066
+}
+#Weare {
+    position: absolute;               /* Позиционируем абсолютно относительно родительского элемента */
+    width: 227px;                    /* Ширина элемента */
+    height: 68px;                    /* Высота элемента */
+    top: 141px;                      /* Отступ сверху */
+    left: 49px;                      /* Отступ слева */
+    gap: 0px;                        /* Это свойство не имеет смысла для элемента без flex или grid */
+    opacity: 1;                      /* Прозрачность, 0 - полностью прозрачный */
+    font-family: 'Montserrat', 'Arial', sans-serif; /* Шрифт */
+    font-size: 32px;                 /* Размер шрифта */
+    font-weight: 350;                /* Толщина шрифта */
+    line-height: 38.4px;             /* Высота строки */
+    text-align: center;              /* Выравнивание текста по центру */
+    text-underline-position: from-font; /* Позиция подчеркивания */
+    text-decoration-skip-ink: none;  /* Как обрабатывать подчеркивания */
+    color: #FFFFFF;                  /* Цвет текста */
+}
+#Choice{
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 404px;
+height: 69px;
+top: 130px;
+left: 325px;
+gap: 0px;
+border-radius: 11px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background: #333232;
+border: 1px solid #00000066
+}
+#ChoiceTxtLink {
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+#ChoiceTxt {
+    position: absolute;
+    width: 404px;
+    height: 68px;
+    top: 141px;
+    left: 325px;
+    gap: 0px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 350;
+    border-radius: 11px;
+    line-height: 38.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border: 1px 0px 0px 0px;
+    color: #FFFFFF;
+    cursor: pointer; /* Указатель на кликабельность */
+    transition: background-color 0.3s ease;
+}
+#Predl{
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 423px;
+height: 69px;
+top: 130px;
+left: 778px;
+gap: 0px;
+border-radius: 11px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background: #333232;
+border: 1px solid #00000066
+}
+#Predl1Link {
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+#Predl1 {
+    position: absolute;
+    width: 423px;
+    height: 68px;
+    top: 141px;
+    left: 778px;
+    gap: 0px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 350;
+    line-height: 38.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    cursor: pointer; /* Указатель на кликабельность */
+    transition: background-color 0.3s ease;
+}
+#ApplicationForm {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#ApplicationForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#ApplicationForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#ApplicationForm input,
+#ApplicationForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#ApplicationForm button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.custom-button {
+    display: block;
+    width: 420px;
+height: 73px;
+top: 1102px;
+left: 656px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background-color:#29B43E;
+    border: 1px solid #00000066;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: white; /* Цвет текста */
+    text-align: center;
+    line-height: 73px; /* Вертикальное выравнивание текста */
+    font-size: 26px; /* Размер шрифта */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 10px; /* Скругление углов */
+}
